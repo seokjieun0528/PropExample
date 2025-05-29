@@ -18,6 +18,12 @@ namespace PropExample
             //Program p = new Program();
             //p.classVar = -3
 
+            // 기본 생성자 : 생성자를 하나라도 정의하면 기본 생성자를 따로 지정줘야한다
+            //Product p = new Product();
+
+            // 팩토리 메서드
+            Product p = Product.GetInstance("아아", 1000);
+
             Box box1 = new Box(100, 200);
             box1.Width = -3;
             Console.WriteLine(box1.Width);
