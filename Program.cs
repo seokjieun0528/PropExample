@@ -24,6 +24,13 @@ namespace PropExample
             // 팩토리 메서드
             Product p = Product.GetInstance("아아", 1000);
 
+            // 정적 생상자 예제
+            Console.WriteLine("첫 번째 위치");
+            Console.WriteLine(Sample.value);
+            Console.WriteLine("두 번째 위치");
+            Sample sample = new Sample();
+            Console.WriteLine("세 번째 위치");
+
             Box box1 = new Box(100, 200);
             box1.Width = -3;
             Console.WriteLine(box1.Width);
