@@ -31,6 +31,17 @@ namespace PropExample
             Sample sample = new Sample();
             Console.WriteLine("세 번째 위치");
 
+            MyMath m = new MyMath();
+            Console.WriteLine(MyMath.PI);
+
+            Item item1 = new Item("고구마", 1000);
+            Item item2 = new Item("사과", 1500);
+            Item item3 = new Item("감자", 2000);
+            Console.WriteLine(item1.id);
+            Console.WriteLine(item2.id);
+            Console.WriteLine(item3.id);
+            //Item.id = 3 // readonly 키워드가 지정된 인스턴스 변수는 수정 불가
+
             Box box1 = new Box(100, 200);
             box1.Width = -3;
             Console.WriteLine(box1.Width);
